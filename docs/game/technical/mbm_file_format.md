@@ -31,6 +31,9 @@ The header has a total size of 7 bytes. The first 4 bytes will always describe t
 | 0x14, 0x15           | MapScript User Variable Count, 16-bit              | 0x0003          |
 
 ### Example Header
+```hex
+4d 42 4d 01 10 10 02 00 1f 02 00 01 00 01 0f 0d 00 0a 0d 00 03
+```
 
 Payload
 =======
@@ -41,6 +44,9 @@ Spawn Block
 The Spawn Block has 2 bytes for each spawn point. The high byte containing the X coordinate, and the low byte containing the Y coordinate. The order these are saved in correspond to the spawn point for Player 1, then Player 2, and so on.
 
 ### Example Spawn Block
+```hex
+0d 0d 04 04
+```
 
 This example Spawn Block describes spawn points for 2 players. The first player will spawn in the top right corner, 1 tile away from the map border. The second player will spawn on the tile south to the first player.
 
