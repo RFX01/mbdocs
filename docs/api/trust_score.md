@@ -14,15 +14,15 @@ Trust Ranks
 
 In order to help players understand the Trust Score system, different Trust Score ranges will have a Trust Rank associated with it. This essentially just provides a label for a certain Trust Score range to get a better idea on what kind of players you can expect to find in a given range.
 
-| Icon | Rank Name | Range (inclusive) |
-|------|-----------|-------------------|
-|      | Ultimate  | 150 and above     |
-|      | Veteran   | 125 to 149        |
-|      | Advanced  | 110 to 124        |
-|      | Standard  | 90 to 109         |
-|      | Tainted   | 70 to 89          |
-|      | Untrusted | 30 to 69          |
-|      | Sketchy   | 29 and below      |
+| Icon                                    | Rank Name | Range (inclusive) |
+|-----------------------------------------|-----------|-------------------|
+| ![](/assets/img/net/UltimateTrust.png)  | Ultimate  | 150 and above     |
+| ![](/assets/img/net/VeteranTrust.png)   | Veteran   | 125 to 149        |
+| ![](/assets/img/net/AdvancedTrust.png)  | Advanced  | 110 to 124        |
+| ![](/assets/img/net/StandardTrust.png)  | Standard  | 90 to 109         |
+| ![](/assets/img/net/TaintedTrust.png)   | Tainted   | 70 to 89          |
+| ![](/assets/img/net/UntrustedTrust.png) | Untrusted | 30 to 69          |
+| ![](/assets/img/net/SketchyTrust.png)   | Sketchy   | 29 and below      |
 
 Loosing Trust Score
 -------------------
