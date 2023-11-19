@@ -21,6 +21,8 @@ Additionally, please note that most of this is technical documentation. Below is
 
 ## Technical documentation for mappers & server owners
 - [MapScript Documentation](/docs/map_editor/mapscript.html)
+- [MapScript ID Cheat Sheet](/docs/map_editor/id_cheat_sheet.html)
 - [Dedicated Server Configuration](/docs/server/configuration.html)
+- [Dedicated Server Shell Reference](/docs/server/shell.html)
 
 If any information you seek is missing, please contact RFX.
