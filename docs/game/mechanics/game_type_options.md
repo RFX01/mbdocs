@@ -5,7 +5,6 @@ parent: Mechanics
 grand_parent: Game
 nav_order: 1
 ---
-
 Powerup Sets
 ============
 
@@ -25,8 +24,9 @@ Could be ordered like this: _Goal Rush (Goal Tile reached) > Paint Bomb (most Pa
 Gameplay
 --------
 
+
 | Option Name                  | Description                                                                                                                                                                       | Example Values                              |
-|------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------|
+| ------------------------------ | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------- |
 | Paint Bomb                   | Bomb Fires color tiles, the player with the most colored Tiles wins.                                                                                                              | True/False                                  |
 | Goal Rush                    | The match will still go on if only a single player remains. If all players die the match will Tie, no matter the order of deaths. The only way to win is by reaching a Goal Tile. | True/False                                  |
 | Respawns                     | Players can Respawn and get points for killing other players. The player with the most points after the match ends wins.                                                          | True/False                                  |
@@ -47,8 +47,9 @@ Gameplay
 Powerups
 --------
 
+
 | Option Name                | Description                                                                                                                                                                                                                                                                                    | Example Values            |
-|----------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------|
+| ---------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | --------------------------- |
 | Powerup Placement          | How powerups are spawned. Random places them randomly in any breakable blocks depending on the Random Powerup concentration and selection. Fixed will use fixed powerup positions and types from map data.                                                                                     | Random, Procedural, Fixed |
 | Powerup Set                | Which powerups will be spawned. The weights and limits of the Powerup Set will be ignored if Random Powerups is enabled.                                                                                                                                                                       | (PowerupSet)              |
 | Powerup Concentration      | How many percent of breakable Tiles will contain powerups. Only used for Procedural and Random Powerups.                                                                                                                                                                                       | 35%                       |
@@ -66,8 +67,9 @@ Powerups
 Bombs
 -----
 
+
 | Option Name               | Description                                                                                                                    | Example Values |
-|---------------------------|--------------------------------------------------------------------------------------------------------------------------------|----------------|
+| --------------------------- | -------------------------------------------------------------------------------------------------------------------------------- | ---------------- |
 | Bomb Switch               | Players can carry several different bomb types and switch between them at any time.                                            | True/False     |
 | Limited Bombs             | Bombs can run out. Breaking blocks without a powerup inside them will drop a bomb that can be picked up by players to restock. | True/False     |
 | Initial Limited Bombs     | How many bombs a player starts with when playing with Limited Bombs.                                                           | 10             |
@@ -83,21 +85,24 @@ Bombs
 Abilities
 ---------
 
+
 | Option Name               | Description                                                                                                                                                         | Example Values      |
-|---------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------|
+| --------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------- |
 | Infinite Abilities        | On-demand abilities can be used infinitely after being collected once.                                                                                              | True/False          |
 | Ability Cooldown          | Make players wait for a cooldown to expire before being able to use the Ability again.                                                                              | True/False          |
 | Initial Ability Selection | Which abilities should be given to the players once the match starts. Can also contain an amount of uses for the abilities for when Infinite Abilities is disabled. | List&lt;Ability&gt; |
 | Invincibility Timer       | Controls how long Invincibility lasts in seconds once the corresponding Ability is used.                                                                            | 10                  |
 | Bomb Freeze Timer         | Controls how long Bomb Timers are frozen in seconds once Bomb Freeze is used.                                                                                       | 5                   |
 | Powerup Radar Timer       | Controls how long Powerup Radar will remain active in seconds once used.                                                                                            | 15                  |
+| Powerup Radar Radius      | Set the radius in which powerups will be displayed (in tiles). More distant powerups will be less opaque.                                                           | 10                  |
 | Object Phasing Timer      | Controls the duration of Object Phasing in seconds once the ability is activated.                                                                                   | 10                  |
 
 Ability Cooldowns
 -----------------
 
+
 | Option Name             | Description                                | Example Values     |
-|-------------------------|--------------------------------------------|--------------------|
+| ------------------------- | -------------------------------------------- | -------------------- |
 | Bomb Kick Cooldown      | Cooldown timer for Bomb Kick ability.      | 0.5 to 120 seconds |
 | Line Bomb Cooldown      | Cooldown timer for Line Bomb ability.      | 0.5 to 120 seconds |
 | Invincibility Cooldown  | Cooldown timer for Invincibility Ability.  | 0.5 to 120 seconds |
@@ -107,14 +112,15 @@ Ability Cooldowns
 | Bomb Rain Cooldown      | Cooldown timer for Bomb Rain ability.      | 0.5 to 120 seconds |
 | Gasoline Rain Cooldown  | Cooldown timer for Gasoline Rain ability.  | 0.5 to 120 seconds |
 | Earthquake Cooldown     | Cooldown timer for Earthquake ability.     | 0.5 to 120 seconds |
-| Fire Spit Cooldown      | Cooldown timer for Fire Spit ability.      | 0.5 to 120 seconds |
+| Flamethrower Cooldown   | Cooldown timer for Fire Spit ability.      | 0.5 to 120 seconds |
 | Bomb Pickup Cooldown    | Cooldown timer for Bomb Pickup ability.    | 0.5 to 120 seconds |
 
 Multipliers
 -----------
 
+
 | Option Name                  | Description                                                                                        | Example Values |
-|------------------------------|----------------------------------------------------------------------------------------------------|----------------|
+| ------------------------------ | ---------------------------------------------------------------------------------------------------- | ---------------- |
 | Base Speed Multiplier        | Multiplies the base player velocity by the given factor.                                           | 1.5x           |
 | Bomb Speed Multiplier        | Multiplies the velocity of moving bombs by the given factor.                                       | 1.5x           |
 | Base Fire Radius Multiplier  | Multiplies the base fire radius of a bomb by the given factor.                                     | 2x             |
@@ -133,8 +139,9 @@ Multipliers
 Limiters
 --------
 
+
 | Option Name          | Description                                                                                                  | Example Values |
-|----------------------|--------------------------------------------------------------------------------------------------------------|----------------|
+| ---------------------- | -------------------------------------------------------------------------------------------------------------- | ---------------- |
 | Speed Limit          | Limits the player Velocity to the given amount.                                                              | 300            |
 | Burn Time Limit      | Limits the Burn Time of Fires to the given amount of milliseconds.                                           | 3000           |
 | Fast Ignition Limit  | Limits the fast Ignition timer to never go lower than the specified amount of milliseconds.                  | 500            |

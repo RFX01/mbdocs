@@ -5,15 +5,15 @@ parent: Mechanics
 grand_parent: Game
 nav_order: 1
 ---
-
 The game will feature different types of bombs that have different properties to spice up the gameplay.
 
 ## Blast Types
 
 Blast Types define how the bomb explosion behaves.
 
+
 | ID   | Name            | Behavior                                                                                                                                          |
-|------|-----------------|---------------------------------------------------------------------------------------------------------------------------------------------------|
+| :--- | --------------- | ------------------------------------------------------------------------------------------------------------------------------------------------- |
 | 0x00 | Linear          | Classic Bomberman Blast, makes a horizontal and vertical line of fire with the bomb in the center.                                                |
 | 0x01 | Rectangular     | Similar to the Dangerous Bomb from Bomberman LIVE. Blasts a huge rectangle of fire that can't be stopped by anything.                             |
 | 0x02 | LinearPlasma    | The pattern is similar to Linear, but the Fire can spread further than one breakable Block in each direction.                                     |
@@ -22,13 +22,17 @@ Blast Types define how the bomb explosion behaves.
 | 0x05 | DirectionalWide | Same as Directional but the Blast is 3 Tiles wide.                                                                                                |
 | 0x06 | PlasmaWide      | Same as LinearPlasma but the Blast is 3 Tiles wide.                                                                                               |
 | 0x07 | Meshed          | Similar to a Linear blast, but it will split up at an intersection rather than stop.                                                              |
+| 0x08 | EMP             | Does not spawn Fire at all, but rather creates a circular blast that will stun any player caught in it.                                           |
 
 ## Bomb Types
+
 The types of available bombs are as follows
 
 **If no sprite is present, it can be assumed that the bomb is not yet implemented.**
+
+
 | Sprite                                  | Name             | Blast Type   | Long Ignition Time | Fast Ignition Time | Fire Radius | Fire Burn Time | Powerup ID |
-|-----------------------------------------|------------------|--------------|--------------------|--------------------|-------------|----------------|------------|
+| --------------------------------------- | ---------------- | ------------ | ------------------ | ------------------ | ----------- | -------------- | ---------- |
 | ![](/assets/img/mb/Bomb.png)            | Bomb             | Linear       | 3s                 | 2.5s               | 1           | 250ms          | None       |
 | ![](/assets/img/mb/QuickBomb.png)       | Quick Bomb       | Linear       | 1.5s               | 1s                 | 1           | 150ms          | 0x000b     |
 | ![](/assets/img/mb/StallBomb.png)       | Stall Bomb       | Linear       | 5s                 | 3s                 | 1           | 2000ms         | 0x000c     |
